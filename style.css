@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #13131a);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* 🚀 HEADER */
+header {
+    background: linear-gradient(90deg, #ff4757, #ff6b81);
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.8s ease-out;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* 🌟 INTRO SECTION */
+.intro {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.intro img {
+    width: 180px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 10px rgba(255, 71, 87, 0.5));
+}
+
+/* 📜 TIMELINE */
+.timeline {
+    padding: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.event {
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #262638;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(255, 71, 87, 0.5);
+}
+
+.event h2 {
+    font-size: 20px;
+    color: #ff6b81;
+}
+
+.event p {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* 🌟 LOGO STYLES */
+.event img {
+    width: 100%;
+    max-width: 260px;
+    margin-top: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(0 4px 10px rgba(255, 71, 87, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.event img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* 🎇 FOOTER */
+footer {
+    background: #ff4757;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* 🌟 ANIMATIONS */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
